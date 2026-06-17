@@ -1,0 +1,35 @@
+# Core data science
+numpy
+pandas
+scipy
+matplotlib
+seaborn
+plotly
+tqdm
+
+# NLP / text processing
+nltk
+gensim
+contractions
+ftfy
+emoji
+langdetect
+wordcloud
+
+# Machine learning
+scikit-learn
+xgboost
+lightgbm
+
+# Deep learning
+tensorflow
+torch
+transformers
+accelerate
+bitsandbytes
+sentencepiece
+
+# LangChain / LLM agents
+langchain-core
+langchain-classic
+langchain-openai

@@ -1,0 +1,22 @@
+# Generated data files — reproducible by running notebooks in order
+data/processed_splits.pkl
+data/features.pkl
+data/sequences.pkl
+data/transformer_embeddings.pkl
+
+# Trained model files
+results/models/
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+**/.ipynb_checkpoints/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# macOS
+.DS_Store
+
+Azure_Open_AI_Key.txt

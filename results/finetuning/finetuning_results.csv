@@ -1,0 +1,4 @@
+Model,Accuracy,F1-Macro,P-Macro,R-Macro,P-Bearish,R-Bearish,P-Bullish,R-Bullish,P-Neutral,R-Neutral
+DeBERTa-v3 (fine-tuned),0.8963,0.8713,0.8665,0.8763,0.829,0.844,0.839,0.868,0.931,0.917
+Twitter-RoBERTa (fine-tuned),0.8848,0.8543,0.846,0.8635,0.792,0.819,0.814,0.865,0.932,0.906
+FinBERT (fine-tuned),0.8628,0.8198,0.8188,0.8239,0.711,0.802,0.835,0.761,0.911,0.909
