@@ -72,7 +72,7 @@ All models evaluated on a stratified 20% held-out validation split (1,909 sample
 | Twitter-RoBERTa | 0.885 | 0.846 | 0.864 | 0.854 |
 | **DeBERTa-v3** | **0.896** | **0.867** | **0.876** | **0.871** |
 
-**Decoder LLM (extra credit)**
+**Decoder LLM**
 
 | Model | Accuracy | Precision | Recall | F1-Macro |
 |---|---|---|---|---|
@@ -90,8 +90,8 @@ All models evaluated on a stratified 20% held-out validation split (1,909 sample
 - **05_deep_architectures.ipynb** – stacked RNN and BiLSTM architectures with Keras
 - **06_transformer_embeddings.ipynb** – frozen transformer encoders as feature extractors
 - **07_transformer_finetuning.ipynb** – end-to-end fine-tuning of DeBERTa-v3, FinBERT, and Twitter-RoBERTa
-- **08_decoder_classification.ipynb** – zero/few-shot classification with decoder LLMs *(extra credit)*
-- **09_agentic_classifier.ipynb** – agentic AI pipeline for classification *(extra credit)*
+- **08_decoder_classification.ipynb** – zero/few-shot classification with decoder LLMs
+- **09_agentic_classifier.ipynb** – agentic AI pipeline for classification
 
 ---
 
