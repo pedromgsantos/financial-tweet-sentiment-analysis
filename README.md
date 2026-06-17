@@ -79,8 +79,6 @@ All models evaluated on a stratified 20% held-out validation split (1,909 sample
 | Phi-3-mini zero-shot | 0.730 | 0.695 | 0.805 | 0.719 |
 | Phi-3-mini few-shot | 0.837 | 0.802 | 0.795 | 0.798 |
 
-> DeBERTa-v3 retrained on the full 9,543-tweet corpus achieves **F1-Macro 0.8798** on the test set.
-
 ---
 
 ## Notebooks
