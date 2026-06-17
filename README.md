@@ -37,6 +37,52 @@ Fine-tuned **DeBERTa-v3** was selected as the final model, outperforming all bas
 
 ---
 
+## Results
+
+All models evaluated on a stratified 20% held-out validation split (1,909 samples). F1-Macro is the primary metric.
+
+**Baselines and classical ML**
+
+| Model | Accuracy | Precision | Recall | F1-Macro |
+|---|---|---|---|---|
+| VADER (lexicon baseline) | 0.483 | -- | -- | 0.438 |
+| KNN (k=15) | 0.798 | 0.787 | 0.647 | 0.688 |
+| BiLSTM (3L stacked, GloVe) | 0.713 | 0.634 | 0.684 | 0.651 |
+| Naive Bayes | 0.792 | 0.792 | 0.713 | 0.718 |
+| LightGBM | 0.791 | 0.718 | 0.731 | 0.724 |
+| Random Forest | 0.818 | 0.811 | 0.692 | 0.734 |
+| XGBoost | 0.811 | 0.743 | 0.752 | 0.748 |
+| MLP (512→256) | 0.821 | 0.783 | 0.725 | 0.750 |
+| Logistic Regression (L2) | 0.810 | 0.745 | 0.758 | 0.751 |
+| LinearSVC (C=0.1) | 0.822 | 0.773 | 0.749 | 0.760 |
+
+**Frozen transformer embeddings + downstream classifier**
+
+| Encoder | Classifier | Accuracy | Precision | Recall | F1-Macro |
+|---|---|---|---|---|---|
+| DistilBERT | LinearSVC | 0.791 | 0.717 | 0.722 | 0.719 |
+| FinBERT | XGBoost | 0.834 | 0.789 | 0.767 | 0.777 |
+| Twitter-RoBERTa | XGBoost | 0.846 | 0.803 | 0.790 | 0.796 |
+
+**Fine-tuned encoders**
+
+| Model | Accuracy | Precision | Recall | F1-Macro |
+|---|---|---|---|---|
+| FinBERT | 0.863 | 0.819 | 0.824 | 0.820 |
+| Twitter-RoBERTa | 0.885 | 0.846 | 0.864 | 0.854 |
+| **DeBERTa-v3** | **0.896** | **0.867** | **0.876** | **0.871** |
+
+**Decoder LLM (extra credit)**
+
+| Model | Accuracy | Precision | Recall | F1-Macro |
+|---|---|---|---|---|
+| Phi-3-mini zero-shot | 0.730 | 0.695 | 0.805 | 0.719 |
+| Phi-3-mini few-shot | 0.837 | 0.802 | 0.795 | 0.798 |
+
+> DeBERTa-v3 retrained on the full 9,543-tweet corpus achieves **F1-Macro 0.8798** on the test set.
+
+---
+
 ## Notebooks
 
 - **01_eda.ipynb** – corpus exploration, class balance, text length distributions, vocabulary analysis
